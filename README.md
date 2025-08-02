@@ -4,39 +4,68 @@ Rough set-based genetic algorithms are feature selection algorithms to solve a l
 In order to solve the feature selection problem according to their dependency. In this algorithms, there are several script that explained as folows:
 
 1. M script  MainOfRSReduct.m
+
 This is a main scripting solution for feature selewction/ attribute reduction, but also the implementation of the entire program of the entrance.
 The objective function consists of three parts. The first part represents the classification ability. A reduction occurs when k = 1. The second part shows the reduction rate. For example, the fewer attributes in the attribute subset B indicate that B is a minimum reduction with a high reduction rate. The third part is the weight factor, which increases the efficiency of the algorithm. The three elements are dynamically adjusted during algorithm evolution.
 
 Since the paper where r is 0 or 1 requirements, genetic algorithms is used to solve programming problems that can be 0-1 by modifying the purpose of the objective function.
 
-2.function M  TargetOptFcn.m ------------
+
+2. Objective function M  TargetOptFcn.m ------------
+
 file:genetic algorithmthe objective function
-to calculatePositiveRegion.m --------- positive field
+
+it is to calculate PositiveRegion.m --------- positive field
+
 approximation CALCULATION
+
 IsSubLowerApproximation.m ------.m determine whether the set a is a subset of the set B 
+
 EquivalentClassSet.m is based on the set of all equivalence classes of R classification, that is R EleEquivalentSet.m -------
+
 U calculation contains a classification of an element
+
 DependencyDegree.m is calculated based attribute significance degree.
 
-3. the main function used MATLAB
+
+3. The main function used MATLAB
+
 genetic algorithm toolbox or ga is Optimizer box genetic algorithmfunction to find a unique matrix elements will not be repeated or not repeated ranks, etc.
+
 max is returns a matrix of rows or columns of maximum
-a matrix ofrows returned max or column minimum
+
+a matrix of rows returned max or column minimum
+
 str2num is string into numerical
+
 values turn num2str is string
+
 dec2bin is decimal turn binary string
+
 ismember is judgment whether elements in a matrix
+
 round is rounding function
+
 length is returns a matrix or vector length
+
 error is give an error
+
 warning is warning
 
-5. The words meaning in this algorithms.
+
+4. The words meaning in this algorithms
+
 reduct is reduction
+
 unique = unique
+
 target = goal
+
 Approximation = Approximation
+
 Equivalent = equivalent
+
 dependency = feature /attribuite dependence
+
 positive field = positive region
 
